@@ -1,0 +1,168 @@
+/*! ******* VARIABLES ****** */
+
+:root{
+    --color-primario:#13a8fe;
+    --color-primario-oscuro:#0371b0;
+    --color-secundario: #ff00ff;
+    --color-terciario: #ffa300;
+    --color-adicional: #cf0060;
+    --color-fondo: #000045;
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --color-gris-oscuro: #414141;            
+}
+
+@font-face {
+    font-family: 'MuseoModerno';
+    src: url(fonts/MuseoModerno/MuseoModerno-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Codystar';
+    src: url(fonts/Codystar/Codystar-Regular.ttf);
+}
+@font-face {
+    font-family: 'cube';
+    src: url(fonts/cube/Cube.ttf);
+}
+@font-face {
+    font-family: 'neon';
+    src: url(fonts/neon/Neon.ttf);
+}
+@font-face {
+    font-family: 'rampart';
+    src: url(fonts/Rampart_One/RampartOne-Regular.ttf);
+}
+
+/* ******* GENERALES ****** */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', sans-serif;
+    background: ;
+}
+
+body{
+    background: var(--color-fondo);
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: ;
+    font-family: 'rampart';
+}
+
+.btn{
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background: var(--color-primario-oscuro);
+    box-shadow: 0 0 20px 2px var(--color-primario);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* ******* MENÚ PRINCIPAL ****** */
+
+.menu_principal{
+    width: 100%;
+    height: 50px;
+    background: var(--color-blanco);
+    border-bottom: 2px solid var(--color-primario);
+}
+
+.menu_principal div{
+    float: left;
+}
+
+.nav_img{
+    height: 100%;
+}
+
+.nav_img img{
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav_enlaces a{
+    line-height: 50px;
+    margin: 0 15px;
+    color: var(--color-primario);
+    padding: 4px 10px;
+    border: 2px solid transparent;
+    transition: all .5s;
+}
+
+.nav_enlaces a.active{
+    color: var(--color-primario-oscuro);
+}
+
+.nav_enlaces a:hover{
+    border: 2px solid var(--color-primario);
+    box-shadow: 0 0 20px 2px var(--color-primario);
+    border-radius: 35%;
+}
+
+
+/* ******* HEADER ****** */
+
+header{
+    width: 100%;
+    height: calc(100vh - 50px);
+    position: relative;
+    background: url(img/wallpaper2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+header div{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header h1{
+    color: var(--color-blanco);
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin: 20px 0;
+    text-shadow: 5px 0 10px var(--color-fondo);
+}
+
+header button{
+    width: 180px;
+    height: 50px;
+}
