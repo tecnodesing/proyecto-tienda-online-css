@@ -95,23 +95,26 @@ h1.title{
     border-bottom: 2px solid var(--color-primario);
 }
 
-.menu_principal div{
+/* .menu_principal div{
     float: left;
     height: 0;
     margin-left: 100px;
-}
+} */
 
 .nav_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
 .nav_img img{
     width: 4%;
     position: relative;
-    top: 50%;
+    /* top: 50%;
     left: -2%;
     transform: translate(-50%, -50%);
-    margin: 22.5px 5px;
+    margin: 22.5px 5px; */
 
 }
 
@@ -381,7 +384,7 @@ header button{
     border-radius: 50%;
     color: var(--color-blanco);
     transform: rotate(-10deg);
-    box-shadow: 0 0 10px var(--color-primario);
+    box-shadow: 0 0 20px var(--color-primario);
     z-index: 1;
     transition: all .5s;
 }
